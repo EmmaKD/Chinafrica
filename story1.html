@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+		<title>Data Viz Final Project - Knight-Bagehot</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom styles -->
+		<link href="style.css" rel="stylesheet">
+
+		<script type="text/javascript" src="dygraph-combined.js"></script>
+
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">China-Africa Project</a>
+				</div>
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="story1.html">Economics</a>
+						</li>
+						<li>
+							<a href="story2.html">Chinese Investment</a>
+						</li>
+						<li>
+							<a href="story3.html">African Repercussions</a>
+						</li>
+					</ul>
+				</div><!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container">
+
+			<div class="starter-template">
+				<h1></h1>
+				<p class="lead">
+				
+					<h2 style="font-family:Georgia; ">Africa Is Rising, But On Chinese Crutches</h2>
+					
+				</p>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4">
+					<p>
+						Once portrayed as the hopeless continent by <i>The Economist </i>in 2000, Africa, the home of more than 1 billion people, is now the fastest-growing region in the world.
+					</p>
+
+					<p>
+						After decades of sluggish economic growth marred by poverty, poor governance and violence, the continent is now shining, thanks to robust growth that averaged 5.7% in the last decade, up from only 2.4% over the previous two decades.
+					</p>
+
+					<p>
+						The export of natural resources, particularly oil, has been the main driver of Africa’s impressive growth since 2000. About two-thirds of the growth has come from the export of natural resources, according to an International Monetary Fund (IMF) report. Oil prices that were more than three times higher on average in 2003-2012 compared to those of the previous decade greatly helped most African countries increase their export revenues and achieve strong economic growth.
+					</p>
+
+
+				</div>
+				<div class="col-md-8">
+
+					<div class="image-holder">
+						<img src="images/Guncarrying.jpg" class="img-responsive">
+						<div class="caption">
+							<i>A Chinese security worker oversees operations at a mine in Ghana. (Yidana Hamid, Ghana)</i>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div><!-- End of row -->
+			
+			<div class="row">
+				<div class="col-md-8">
+				<p>
+						As the strong demand for natural resources continues, economic growth in sub-Sahara Africa is projected to rise to 5.3% in 2014. Similarly, the gross fixed capital formation, which represents infrastructure investment, rose to 20.4% of GDP in 2011 from 16% in 2000.
+					</p>
+
+					<p>
+						Chinese engagement with African countries via trade, investment, aid and loans has increased dramatically ever since China adopted a policy of expanding its trade relationship with Africa in 1996 to ensure reliable energy sources to fuel its unprecedented growth. When global powers were competing to secure energy supplies from the Middle East, China – the largest natural resources consumer in the world –quietly turned toward Africa. It saw the continent as both a great source to ensure a continuous supply natural resources, energy and food as well as a flourishing market for its exports. China’s attraction to Africa was obvious as the continent had about 40% of global reserves of natural resources, 60% of uncultivated agricultural land, and 1 billion people with increasing purchasing power.
+					</p>
+				</div>
+			</div><!-- End of row -->
+			
+			
+			
+				
+			<div class="row">
+				<div class="col-md-6">
+					<b>Exports to China: Ghana Stands Out Among Other African Nations</b>
+					<div id="graphdiv2" style="width:400px; height:300px;"></div>
+
+					<script type="text/javascript">
+						new Dygraph(document.getElementById("graphdiv2"), [[2007, 18, 34, 14], [2008, 18, 44, 30], [2009, 8, -35, -34], [2010, 24, 24, 39], [2011, 55, 32, 23], [2012, 15, 6, -2]], {
+							labels : ["Year", "Ghana", "Angola", "Nigeria"]
+						});
+					</script>
+
+					<p>(Mouse-over for details)</p>
+					<div class="caption">
+						<i>Year-over-year percentage growth in exports to China.
+						Source: elibrary-data.imf.org.</i>
+					</div>
+				</div><!-- end first chart 8-col-->
+			
+			<div class="col-md-6">
+			<b>Ghana Vs. Nigeria: A Tale of Two Trade Deficits </b>
+			<div id="graphdiv3"
+			style="width:400px; height:300px;"></div>
+			<script type="text/javascript">
+				new Dygraph(document.getElementById("graphdiv3"), [[2007, -28, 4], [2008, -35, -2], [2009, 39, -63], [2010, -33, 48], [2011, -8, 3], [2012, -7, 53]], {
+					labels : ["Year", "Ghana", "Nigeria"]
+				});
+
+			</script>
+			<p>Pct Change in Trade Deficit/Surplus With China (Negative equals more imports)</p>
+			<div class="caption">
+				<i>Year-over-year change in trade balance with China. Ghana has been maintaining
+					a trade surplus, while Nigeria's had a large deficit.
+				Source: elibrary-data.imf.org.</i>
+			</div>
+			</div><!-- end second chart 8-col-->
+			
+		</div><!--End row-->
+
+
+	<div class="row">
+		<div class="col-md-4">
+		<img src="images/locatormapimage.jpg" class="img-responsive">
+		<a href="http://www.aaronmkessler.com/fproject1/index.html" target="_blank" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-zoom-in"></span> Open Locator Map</a>
+		</div>
+		<div class="col-md-8">
+							<p>
+					Over the years, trade between Africa and China, which was $10.5 billion in 2000, grew to $200 billion in 2013, making China Africa's biggest trading partner, having surpassed the U.S. in 2009. The Chinese government seems increasingly eager to cement China’s dominance in Africa by burnishing its image through initiatives such as a $20 billion line of credit to the continent, which it announced in 2012.
+				</p>
+
+				<p>
+					Along with the economic progress, Africa has witnessed positive changes in its social sector, although they have been less rosy than the economic changes that have occurred. The number of Africans living on less than $1.25 a day fell by 8 percentage points over the last two decades, while primary school enrolment increased to 77% from 59% during the past 10 years. Yet, an alarming level of income inequality continues to be a major concern. Almost one out of every two Africans lives in extreme poverty, according to a recent World Bank report entitled “Africa’s Pulse.”
+				</p>
+
+				<p>
+					“Africa’s growth has not been as powerful in reducing poverty as it could have been because of high levels of inequality,” the report said.
+				</p>
+
+				<p>
+					Deepening Africa-China trade relations also have exposed African growth to the risk of an economic slowdown in China. Although Africa largely has benefited from China’s economic boom through increased trade and investment in the mineral sector, a number of studies have issued warnings about Africa’s growing vulnerability to the economic shocks hitting the Chinese economy. A recent IMF study entitled” Africa’s Rising Exposure to China: How Large Are Spillovers Through Trade?” found that a one percentage-point increase in China’s domestic investment growth translates to an average 0.6 percentage-point increase in Africa’s export growth. The study called for African countries to diversify their export destinations to minimize the risks.
+				</p>
+
+				<p>
+					Moreover, Africa’s high dependency on natural resource exports has made its resource-rich economies vulnerable to sharp and unexpected swings in commodity prices. The World Bank’s “Africa’s Pulse” report also noted that while high commodity prices have helped the region in recent years, the heavy reliance on resource-based exports has made it greatly vulnerable to shocks in commodity prices.
+				</p>
+
+				<p>
+					As is the case in most African countries, natural resource exports have remained the most important growth accelerator for Angola, Nigeria and Ghana. These three countries had a combined population of 215 million and total GDP of $215 billion in 2012, representing almost 11% of Africa’s total GDP. Because of the rapid economic growth mainly fueled by the mineral trade, the average per capita income of the three countries nearly doubled to more than $3,000 within the last nine years.
+				</p>
+
+				<p>
+					Nigeria, the second-biggest economy in Africa after South Africa, is the 12th-largest producer of petroleum worldwide. The annual bilateral trade between China and Nigeria increased to $13 billion in 2013 from $2 billion in 2002, making China Nigeria’s third-largest trading partner. Nigeria’s major export partners are the U.S. (17%), India (11%) and the Netherlands (9%). Similarly, its major imports are machinery, chemicals, transport equipment and manufactured goods. China accounts for 18.3% of its imports followed by the U.S. (10%) and India (6%).
+				</p>
+
+				<p>
+					Angola achieved the world’s highest annual average economic growth of 11% between 2001 and 2010. Oil accounts for nearly 80% of government revenue, 90% of exports and 47% of the country’s GDP. China, which receives 42% of the total Angolan exports, is the country’s largest export destination followed by the U.S. (23%) and India (10%). Similarly, China is also Angola’s largest source of imports (21%) followed by Portugal (20%) and France (8%).
+				</p>
+
+				<p>
+					Ghana was the world’s 20th fastest-growing country in 2013 and the ninth richest one in Africa. Ghana’s largest export is gold, which accounts for 20% of its total exports followed by oil (19%). South Africa is Ghana’s top export destination, accounting for 20% of the country’s exports. Among Ghana’s import trading partners, China supplies one-fourth of its imports followed by Nigeria.
+				</p>
+		</div>
+		
+		
+	</div><!-- End of row -->
+		
+		
+		</div><!-- /.container -->
+
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/WSJfooterimage.jpg" class="img-responsive">
+			</div>
+		</div>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="../../assets/js/docs.min.js"></script>
+
+		<script src="script.js" type="text/javascript"></script>
+	</body>
+</html>
+

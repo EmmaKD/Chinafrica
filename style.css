@@ -1,0 +1,53 @@
+div {
+	/*outline: 1px solid red;*/
+}
+
+
+body {
+    padding-top: 50px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.bs-example{
+    	margin: 20px;
+    }
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 960px;
+}
+h4 {
+    margin-top: 25px;
+}
+.row {
+    margin-bottom: 20px;
+}
+.row .row {
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+[class*="col-"] {
+	/*add container outlines to see what's happening with grid boxes while working....*/
+    /*background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid rgba(86, 61, 124, 0.2); */
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+hr {
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+
+#video {
+	width: 100%;
+}
+
+#chartone {
+	width: 100%;
+}
